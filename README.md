@@ -18,4 +18,16 @@
 * 禁止剽窃其他参赛者代码
 # Evaluation
 * 测试集上的MAPE(Mean Absolute Percentage Error,平均绝对误差百分比，精确到小数点后8位)，公式如下：
-![mape](https://latex.codecogs.com/svg.latex?Mape=\frac{1}{N}\sum_{i=1}^N\left|%20\frac{y_i-p_i}{y_i}\right|\\)
+![Mape计算公式](https://latex.codecogs.com/gif.latex?\\Mape=\frac{1}{N}\sum_{i=1}^N\left|%20\frac{y_i-p_i}{y_i}\right|)<br>
+其中，yi为真实值，pi为预测值，N为样本数量，训练集和测试集的数据已经满足任何yi均不为0；
+* MAPE值越低，排名越高；
+* 每位参赛者有3次提交机会，提交相关说明如下：
+ * 2020-11-10开始每两周内提交一次，每次所有同学提交之后我会两天之内公布leaderboard,最终成绩取3次分数中最好的一次；
+ * 每两周之内的提交具体日期不限，但不可逾期，且两周内只有一次机会；
+ * 提交截止日期为2020-12-23；
+ * 2020-11-17前可以多进行一次提交进行测试，若大家提交的文件有问题我会进行反馈，但不公布leaderboard.
+#Prize
+第一名：IIF Student Award,奖励为1年IIF Member和100美金，获奖者学校和姓名将被公示于：IIF Student Award Program;获得第一位的同学可以公开自己的源码或者分享自己的思路给大家。
+#Benchmark
+基准分数（MAPE）：普通线性回归模型（0.2273）<br>
+MATLAB代码：<br>
