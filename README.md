@@ -35,4 +35,32 @@ MATLAB代码：<br>
 ```
 %%% advanced forecasting competition
 
+%% preprocess the dataset
+load('advanced_forecast_competition_train.mat');
+[m_train, n] = size(X);
+m_test = size(X1);
+fprintf('Dimension of training X: %d, %d, dimension of test X: %d, %d\n', m_train, n, m_test, n);
+% perform a min-max scaling for both training ang test X
+X_all = [X;X1];
+m = size(X_all);
+mins = min(X_all);
+maxs = max(X_all);
+for i = 1:m
+    X_all(i,:) = (X_all(i,:) - mins) ./ (maxs - mins);
+end
+scaled_X_train = X_all(1:m_train, :);
+scaled_X_test = X_all(m_train + 1:end,:);
+clear X_all; % delete X_all to save memory
+%% build simple linear regression model
+% train linear regression model using MATLAB's Statistics and Machine Learning Toolbox
+fprintf('Fitting Linear Regression ...\n');
+lm = fitlm(scaled_X_train, y);
+pred_train = lm.predict(scaled_X_train);
+mape_train = mean(abs((y - pred_train) ./ y));
+fprintf('R-Square: %g, Mape on training set: %g\n', lm.Rsquared.Adjusted, mape_train);
+pred = lm.predict(scaled_X_test); % make prediction on the test set using fitted model
+
+% save the prediction
+save('./2018100402-LRbenchmark.mat', 'pred');
+% submit this saved file to me: yww0507@hotmail.com
 ```
