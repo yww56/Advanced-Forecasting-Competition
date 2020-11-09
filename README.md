@@ -1,5 +1,5 @@
 # Advanced Forecasting(DUFE) Competition 2020
-本竞赛目前仅限组内成员参加
+本竞赛目前仅限组内成员参加<br>
 请各位参赛者将结果文件发送至：yww0507@hotmail.com
 # Data
 分发给各位参赛者的：advanced_forecast_competition_train.mat,保存了三个MATLAB变量：X1, y, X1<br>
@@ -18,3 +18,4 @@
 * 禁止剽窃其他参赛者代码
 # Evaluation
 * 测试集上的MAPE(Mean Absolute Percentage Error,平均绝对误差百分比，精确到小数点后8位)，公式如下：
+![mape](https://latex.codecogs.com/svg.latex?Mape=\frac{1}{N}\sum_{i=1}^N\left|%20\frac{y_i-p_i}{y_i}\right|\\)
