@@ -17,7 +17,7 @@
   * 若提交文本文件，必须保证文件只包含一列数字（即测试样本的预测值），无文件头（列名）和索引（行序号）；
 * 禁止剽窃其他参赛者代码
 # Evaluation
-* 测试集上的MAPE(Mean Absolute Percentage Error,平均绝对误差百分比，精确到小数点后8位)，公式如下：
+* 测试集上的MAPE(Mean Absolute Percentage Error,平均绝对误差百分比，精确到小数点后8位)，公式如下：<br>
 ![Mape计算公式](https://latex.codecogs.com/svg.latex?Mape=\frac{1}{N}\sum_{i=1}^N\left|\frac{y_i-p_i}{y_i}\right|)<br>
 其中，yi为真实值，pi为预测值，N为样本数量，训练集和测试集的数据已经满足任何yi均不为0；
 * MAPE值越低，排名越高；
