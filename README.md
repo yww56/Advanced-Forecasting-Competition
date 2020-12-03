@@ -30,7 +30,7 @@
   * 2020-12-18 00：00前可以多进行一次提交进行测试，若大家提交的文件有问题我会进行反馈，但不公布leaderboard.
 # Prize
 表现优异的同学将进入数据科学团队，与大家一同学习进步！<br>
-除此之外，所有参赛同学将与另5名参赛者（不纳入数据科学团队计划）共同角逐 IIF Student Award, 排名第一的同学将获得该奖项并奖励1年IIF Member和100美金，获奖者学校和姓名将被公示于：IIF Student Award Program；
+除此之外，所有参赛同学将与另5名参赛者（不纳入数据科学团队计划）共同角逐 IIF Student Award, 排名第一的同学将获得该奖项并奖励1年IIF Member和100美金，获奖者学校和姓名将被公示于：[IIF Student Award Program](https://forecasters.org/programs/research-awards/students/)
 # Benchmark
 基准分数（MAPE）：普通线性回归模型（0.2273）<br>
 <br>
