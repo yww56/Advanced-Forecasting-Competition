@@ -2,7 +2,7 @@
 本竞赛旨在为数据科学团队遴选7-8名优秀人才<br>
 请各位参赛者将结果文件发送至：yww0507@hotmail.com
 # Data
-分发给各位参赛者的：advanced_forecast_competition_train.mat,保存了三个MATLAB变量：X1, y, X1<br>
+分发给各位参赛者的：advanced_forecast_competition_train.mat,保存了三个MATLAB变量：X, y, X1<br>
 * 数据来源于GEF2012Comp(2012年全球能源预测竞赛)，为美国某地区3年间每小时的电力负荷值和温度数据。分发的数据为源数据将时间（年，月，小时）处理为哑变量，
 并与温度的幂做交叉得到的，因变量为每个对应时段的电力负荷值，更多详细信息见文章：[PhD Dissertation of Dr. Hong](https://xueshu.baidu.com/usercenter/paper/show?paperid=25c9c3a0d40abf6b37ae346fa4e39414&site=xueshu_se)
 * X为训练集的特征（维度：[17520, 289]），y为训练集的因变量（维度：[17520, 1]）
